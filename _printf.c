@@ -12,7 +12,8 @@ int _printf(const char *format, ...)
 	int i = 0, j = 0, buff_count = 0, prev_buff_count = 0;
 	char buffer[2000];
 	va_list arg;
-	call_t container[] = {
+	call_t container[] = 
+	{
 		{'c', parse_char}, {'s', parse_str}, 
 		{'%', parse_perc}, {'\0', NULL}
 	};
