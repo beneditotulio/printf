@@ -22,5 +22,8 @@ typedef struct call
 int _printf(const char *format, ...);
 int buff_append(char *buff_dest, va_list arg, int buff_count, char type);
 int print_buff(char *buff, unsigned int nbuff);
+int parse_str(char *buff_dest, va_list arg, int buff_count);
+int parse_perc(char *buff_dest, va_list arg, int buff_count);
+int parse_char(char *buff_dest, va_list arg, int buff_count);
 
 #endif
